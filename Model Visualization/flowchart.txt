@@ -1,0 +1,28 @@
+flowchart TB
+    A["Data Acquisition Module"] -->|Preprocessed data| B["Data Preprocessing Module"]
+    B -->|Preprocessed data| C["Model Training Module"]
+    C -->|Trained GAN model| D["Integration Module"]
+    D -->|Synthesized images| E["Evaluation Module"]
+    E --> F["Storage and Backup"]
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style B fill:#ccf,stroke:#333,stroke-width:2px
+    style C fill:#cfc,stroke:#333,stroke-width:2px
+    style D fill:#fcf,stroke:#333,stroke-width:2px
+    style E fill:#cff,stroke:#333,stroke-width:2px
+    style F fill:#fdd,stroke:#333,stroke-width:2px
+
+flowchart TB
+    A["Data Acquisition Module"] -->|Data flow| B["Data Preprocessing Module"]
+    B -->|Processed data| C["Model Training Module\nAlgorithms: Backpropagation, Adam Optimizer\nTensors (PyTorch), dictionaries"]
+    C -->|Trained model| D["Integration Module\nAlgorithms: Convolution, ReLU\nFeature maps, weight matrices"]
+    D -->|Synthesized images| E["Evaluation Module\nAlgorithms: MAE, SSIM, PSNR calculations\nArrays, Scikit-Image"]
+    E --> F["Storage and Backup\nSQL, HDF5\nB-trees, File systems"]
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style B fill:#ccf,stroke:#333,stroke-width:2px
+    style C fill:#cfc,stroke:#333,stroke-width:2px
+    style D fill:#fcf,stroke:#333,stroke-width:2px
+    style E fill:#cff,stroke:#333,stroke-width:2px
+    style F fill:#fdd,stroke:#333,stroke-width:2px
+
+
+
